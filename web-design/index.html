@@ -18,10 +18,36 @@
     <main class="profile-section">
         <div class="profile-container">
             <img src="image.png" alt="Profilowe zdjęcie" class="profile-image">
-            <h1 class="profile-name">Maryna Łukaczyk</h1>
+            <h1 class="profile-name">Amelia Horodecka</h1>
         </div>
         
     </main>
+    <footer>copyright © Amelia Horodecka</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        alert('Witaj na mojej stronie!');
+    });
+    const button = document.querySelector('.nav-button');
+    button.addEventListener('mouseenter', function() {
+        this.style.backgroundColor = '#ffcce0';
+    });
+    button.addEventListener('mouseleave', function(){
+        this.style.backgroundColor = ' #ff80b3';
+    });
+    setInterval(() => {
+        let d = new Date();
+        document.querySelector('footer').textContent = 
+        "© Amelia Horodecka | " + d.toLocaleString();
+    }, 1000);
+    let visits = localStorage.getItem('visits');
+    if (!visits) {
+        visits = 1;
+    } else {
+    visits = parseInt(visits) + 1;}
+    localStorage.setItem('visits', visits);
+    document.querySelector('footer').textContent += ' | To Twoja ${visits}. wizyta ';
+
+</script>
 
 
 </body>
