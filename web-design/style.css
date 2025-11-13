@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4a90a4 0%, #5ba3b8 50%, #357a8f 100%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 18px 50px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    text-align: center;
+}
+
+.profile-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.9s ease;
+}
