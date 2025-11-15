@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_projekty.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="nav-button">Strona główna</a>
+        <button id="theme-toggle" class="theme-toggle">☀️ / 🌙</button>
+    </nav>
+
+<h1 class="projects-title">Moje Projekty</h1>
+
+<!-- FILTRY -->
+<div class="filter-buttons">
+    <button class="filter-btn" data-filter="all">Wszystkie</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="mobile">Mobile</button>
+    <button class="filter-btn" data-filter="design">Design</button>
+</div>
+
+<div class="slider-container">
+    <div class="slider-track">
+        <div class="slide">Slajd 1</div>
+        <div class="slide">Slajd 2</div>
+        <div class="slide">Slajd 3</div>
+    </div>
+
+    <button class="slider-btn prev">⟨</button>
+    <button class="slider-btn next">⟩</button>
+
+    <div class="slider-dots"></div>
+</div>
+
+<!-- GALERIA PROJEKTÓW -->
+<div class="projects-container">
+
+    <div class="project-card" data-category="web">
+        <h3>Strona portfolio</h3>
+        <p>Projekt Web</p>
+    </div>
+
+    <div class="project-card" data-category="mobile">
+        <h3>Aplikacja mobilna ToDo</h3>
+        <p>Projekt Mobile</p>
+    </div>
+
+    <div class="project-card" data-category="design">
+        <h3>Grafika promocyjna</h3>
+        <p>Projekt Design</p>
+    </div>
+
+    <div class="project-card" data-category="web">
+        <h3>Sklep internetowy</h3>
+        <p>Projekt Web</p>
+    </div>
+
+</div>
+
+
+
+<footer>
+        <div id="visit-counter"></div>
+        <div id="date-time"></div>
+        <p>Copyright 1999-2025 All Rights Reserved.</p>
+    </footer>
+
+
+
+</body>
+</html>

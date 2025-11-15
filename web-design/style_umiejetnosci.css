@@ -1,0 +1,74 @@
+/* Podstawowy układ Grid */
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+min-height: 100vh;
+display: grid;
+grid-template-areas:
+"header header"
+"aside main"
+"footer footer";
+grid-template-columns: 200px 1fr;
+grid-template-rows: auto 1fr auto;
+}
+
+
+header {
+grid-area: header;
+background: #333;
+color: white;
+padding: 20px;
+}
+
+
+header nav a {
+color: white;
+margin-right: 15px;
+text-decoration: none;
+}
+
+
+aside {
+grid-area: aside;
+background: #f0f0f0;
+padding: 20px;
+}
+
+
+main {
+grid-area: main;
+padding: 20px;
+}
+
+
+footer {
+grid-area: footer;
+background: #333;
+color: white;
+text-align: center;
+padding: 10px;
+}
+
+
+/* Sekcja umiejętności – Flexbox */
+.skills-container {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+justify-content: center;
+margin-top: 20px;
+}
+
+
+.skill-badge {
+padding: 10px 15px;
+border-radius: 20px;
+background: #d6e4ff;
+border: 1px solid #4d79ff;
+font-weight: bold;
+}
+
+
+ul {
+margin-top: 15px;
+}

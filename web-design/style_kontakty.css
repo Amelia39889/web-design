@@ -14,20 +14,34 @@ body {
 }
 
 .navigation {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 40px 20px;
+    padding: 20px 20px;
     flex-wrap: wrap;
 }
 
-.nav-button {
+.nav-button-1 {
     background-color: rgba(255, 255, 255, 0.85);
     color: #2c3e50;
     text-decoration: none;
-    padding: 18px 50px;
+    padding: 10px 20px;
     border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    text-align: center;
+}
+
+.nav-button-2 {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 0px;
     font-size: 1.2rem;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -40,6 +54,7 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
+    font-size: 1rem;
     align-items: center;
     padding: 10px;
 }
@@ -48,7 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .profile-image {
@@ -58,7 +73,61 @@ body {
     border-radius: 50%;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     transition: transform 0.9s ease;
-}  
+}
+
+.profile-name-1 {
+      text-align: center;
+    margin-bottom: 20px;
+    color: #f7eff2;
+    font-size: 2rem;
+}
+
+/*kontakt*/
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: hsla(331, 96%, 36%, 0.752);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    height: 18px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 320px;
+
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form-container {
+    padding: 10px 50px;
+}
+
 
 footer {
     margin-top: 60px;
@@ -86,7 +155,7 @@ footer {
 #date-time {
     font-size: 1rem;
     font-weight: 600;
-    color: #010912;
+    color: #02080f;
     letter-spacing: 0.5px;
 }
 
@@ -96,8 +165,6 @@ footer p {
     color: #333;
     opacity: 0.8;
 }
-
-
 
 
 
@@ -154,49 +221,4 @@ body.dark-mode footer {
     box-shadow: 0 4px 15px rgba(162, 6, 58, 0.705);
     transition: 0.3s 
 ease;
-}
-
-
-
-.cursor {
-    display: inline-block;
-    margin-left: 3px;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
-}
-
-
-.text{
-    display: flex;
-    justify-content: center;   /* poziome wyśrodkowanie */
-    align-items: center;       /* pionowe wyśrodkowanie (jeśli chcesz) */
-    width: 100%;
-    margin-top: 40px;
-
-
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #0e771ada;
-    display: flex;
-    align-items: center;
-}
-
-
-#weather-widget {
-    position: fixed;
-    top: 20px;
-    left: 20px;   /* ← LEWY GÓRNY RÓG */
-    background: rgba(255, 255, 255, 0.85);
-    padding: 12px 18px;
-    border-radius: 10px;
-    font-size: 1rem;
-    color: #13437a;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    backdrop-filter: blur(6px);
-    z-index: 1000;
-    font-weight: 600;
 }

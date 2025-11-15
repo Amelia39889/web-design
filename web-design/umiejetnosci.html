@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moje umiejętności</title>
+    <link rel="stylesheet" href="style_projekty.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "aside main"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        header {
+            grid-area: header;
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        header nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        aside {
+            grid-area: aside;
+            background: #f0f0f0;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: main;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .skill-badge {
+            padding: 10px 15px;
+            border-radius: 20px;
+            background: #d6e4ff;
+            border: 1px solid #4d79ff;
+            font-weight: bold;
+        }
+
+        ul {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="o-mnie.html">O mnie</a>
+            <a href="projekty.html">Projekty</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="umiejetnosci.html">Umiejętności</a>
+        </nav>
+    </header>
+
+    <aside>
+        <h3>Nawigacja boczna</h3>
+        <p>Tu możesz dodać np. linki lub opis.</p>
+    </aside>
+
+    <main>
+        <h1>Moje umiejętności</h1>
+        <p>Na tej stronie przedstawiam moje najważniejsze umiejętności techniczne, których używam w projektach.</p>
+
+        <div class="skills-container">
+            <div class="skill-badge">HTML</div>
+            <div class="skill-badge">CSS</div>
+            <div class="skill-badge">JavaScript</div>
+            <div class="skill-badge">Git</div>
+            <div class="skill-badge">Testowanie</div>
+            <div class="skill-badge">React</div>
+            <div class="skill-badge">Node.js</div>
+            <div class="skill-badge">SQL</div>
+        </div>
+
+        <h2>Różnice między Flexbox a CSS Grid</h2>
+        <ul>
+            <li>Flexbox działa jednowymiarowo (układ w rzędzie lub kolumnie), podczas gdy CSS Grid jest dwuwymiarowy (rzędy i kolumny jednocześnie).</li>
+            <li>Grid pozwala tworzyć pełne układy stron, a Flexbox jest lepszy do lokalnych elementów w jednym wymiarze.</li>
+            <li>W Flexbox rozmiary elementów zależą bardziej od ich zawartości, a w Grid częściej określa je sam układ.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Moje portfolio</p>
+    </footer>
+</body>
+</html>
